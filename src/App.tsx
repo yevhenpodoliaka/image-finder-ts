@@ -63,12 +63,13 @@ function App() {
   return (
     <div className="App">
       <SearchBar onSubmitQuery={onSubmitQuery} />
-      <Loader visible={loading} />
+
       {totalHits === 0 ? (
         <Message />
       ) : (
         <Gallery images={items} setImageURL={setLargeImageURL} />
       )}
+      <Loader visible={loading} />
       {showBtnLoadMore() && <LoadMoreBtn onClick={handlerBtnLoadMore} />}
       {largeImageURL && (
         <Modal onClose={closeModal}>

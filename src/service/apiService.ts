@@ -1,5 +1,4 @@
-
-const KEY = '23370156-8e4bef2823258510dc0c03035';
+const KEY = process.env.REACT_APP_API_KEY;
 const BASE_URL = 'https://pixabay.com/api/';
 // import { Image } from "../type";
 

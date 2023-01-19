@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Image } from "./type";
-import { Gallery } from "./Gallery/Gallery";
-import { LoadMoreBtn } from "./LoadMoreBtn/LoadMoreBtn";
-import { SearchBar } from "./SearchBar/SearchBar";
-import { Modal } from "./Modal/Modal";
-import { Message } from "./Message/Message";
-import { Loader } from "./Loader/Loader";
+import { Gallery } from "./components/Gallery/Gallery";
+import { LoadMoreBtn } from "./components/LoadMoreBtn/LoadMoreBtn";
+import { SearchBar } from "./components/SearchBar/SearchBar";
+import { Modal } from "./components/Modal/Modal";
+import { Message } from "./components/Message/Message";
+import { Loader } from "./components/Loader/Loader";
 import fetchImg from "./service/apiService";
 
 function App() {

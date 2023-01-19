@@ -1,5 +1,5 @@
 export type Image = {
-    id:string,
+  id:string,
   largeImageURL: string;
   webformatURL: string;
   tags: string;

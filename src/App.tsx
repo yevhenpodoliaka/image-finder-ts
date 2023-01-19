@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./App.css";
 import { Image } from "./type";
 import { Gallery } from "./components/Gallery/Gallery";
 import { LoadMoreBtn } from "./components/LoadMoreBtn/LoadMoreBtn";
@@ -61,7 +60,7 @@ function App() {
     setLargeImageURL("");
   };
   return (
-    <div className="App">
+    <div  style={{display:"grid",gridTemplateColumns:"1fr",gridGap:"16px",paddingBottom:"24px"}}>
       <SearchBar onSubmitQuery={onSubmitQuery} />
 
       {totalHits === 0 ? (

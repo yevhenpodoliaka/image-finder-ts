@@ -1,9 +1,9 @@
 import style from "./Gallery.module.css";
 import { GalleryItem } from "../GalleryItem/GalleryItem";
-import { Image } from "../../type";
+import { IImage } from "../../type";
 
 type GalleryProps = {
-  images: Image[];
+  images: IImage[];
   setImageURL: (largeImageURL: string) => void;
 };
 

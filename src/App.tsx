@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Image } from "./type";
+import { IImage} from "./type";
 import { Gallery } from "./components/Gallery/Gallery";
 import { LoadMoreBtn } from "./components/LoadMoreBtn/LoadMoreBtn";
 import { SearchBar } from "./components/SearchBar/SearchBar";
@@ -12,7 +12,7 @@ function App() {
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
   const [totalHits, setTotalHits] = useState(0);
-  const [items, setItems] = useState<Image[]>([]);
+  const [items, setItems] = useState<IImage[]>([]);
   const [loading, setLoading] = useState(false);
   const [largeImageURL, setLargeImageURL] = useState("");
 
@@ -24,7 +24,7 @@ function App() {
     setLoading(true);
 
     fetchImg(query, page)
-      .then((data: any) => {
+      .then((data) => {
         setItems((prevState) => [...prevState, ...data.hits]);
         setTotalHits(data.totalHits);
       })
